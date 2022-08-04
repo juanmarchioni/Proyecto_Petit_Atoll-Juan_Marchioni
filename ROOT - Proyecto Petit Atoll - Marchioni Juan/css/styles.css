@@ -55,6 +55,14 @@ a:active {
         align-self: flex-start;
         height: 10rem;
         max-width: 100%;
+        animation-duration: 4s;
+        animation-name: aparecer;
+        animation-iteration-count: initial;
+    }
+
+    @keyframes aparecer{ /*animacion para aparecer logo al comienzo*/
+        0% {opacity: 0;}
+        100% {opacity: 1;}
     }
 
     .navLogos{
@@ -68,7 +76,7 @@ a:active {
         height: 2rem;
     }
 
-    .encabezadoLogosLinks:hover{
+    .encabezadoLogosLinks:hover{ /*animacion para escalar logos de redes sociales al pasar el mouse*/
         transform: scale(1.5);
     }
 
@@ -95,7 +103,7 @@ a:active {
         padding: 0.5rem 2.5vw;
     }
 
-    .encabezadoBarraLinks:hover{
+    .encabezadoBarraLinks:hover{ /*animacion para resaltar botones de navegacion al pasar el mouse*/
         background-color: rgb(123, 220, 123);
         color: whitesmoke;
         border: rgb(123, 220, 123) 0.1rem solid;
@@ -146,7 +154,7 @@ a:active {
         padding-right: 1rem;
     }
 
-    .pieLogosLinks:hover{
+    .pieLogosLinks:hover{ /*animacion para escalar logos de redes sociales al pasar el mouse*/
         transform: scale(1.25);
     }
 
@@ -172,14 +180,13 @@ a:active {
         color: aliceblue;
     }
 
-
     .pieMapa{
         grid-area: pieMapa;
         display: flex;
         justify-content: stretch;
         height: 100%;
         width: 100%;
-    }  
+    }   
 
     .contenidoInicio{
         grid-area: contenido;
@@ -190,7 +197,7 @@ a:active {
         "parrafo2 parrafo2";
         grid-template-columns: 50% 50%;
         grid-template-rows: 5rem auto 5rem; 
-        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
+        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244)); /*gradiente de fondo*/
     }
 
     .inicioh1{
@@ -254,7 +261,7 @@ a:active {
         "nosP2 nosP2 nosImg1";
         grid-template-columns: 33.33% 33.33% 33.33%;
         grid-template-rows: 5rem 18rem 18rem auto; 
-        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
+        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244)); /*gradiente de fondo*/
     }
 
     .nosotrosTitulo{
