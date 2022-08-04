@@ -55,7 +55,7 @@ a:active {
         align-self: flex-start;
         height: 10rem;
         max-width: 100%;
-        animation-duration: 4s;
+        animation-duration: 3s;
         animation-name: aparecer;
         animation-iteration-count: initial;
     }
