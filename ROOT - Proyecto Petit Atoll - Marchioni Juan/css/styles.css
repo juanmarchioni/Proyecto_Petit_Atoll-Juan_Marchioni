@@ -68,6 +68,10 @@ a:active {
         height: 2rem;
     }
 
+    .encabezadoLogosLinks:hover{
+        transform: scale(1.5);
+    }
+
     .navBarra{
         grid-area: navBarra;
         display: flex;
@@ -89,6 +93,12 @@ a:active {
         background-color: whitesmoke;
         border: rgb(123, 220, 123) 0.1rem solid;
         padding: 0.5rem 2.5vw;
+    }
+
+    .encabezadoBarraLinks:hover{
+        background-color: rgb(123, 220, 123);
+        color: whitesmoke;
+        border: rgb(123, 220, 123) 0.1rem solid;
     }
 
     .pie{
@@ -136,6 +146,10 @@ a:active {
         padding-right: 1rem;
     }
 
+    .pieLogosLinks:hover{
+        transform: scale(1.25);
+    }
+
     .pieSegcont{
         grid-area: pieSegcont;
         display: flex;
@@ -176,7 +190,7 @@ a:active {
         "parrafo2 parrafo2";
         grid-template-columns: 50% 50%;
         grid-template-rows: 5rem auto 5rem; 
-        background-color: rgb(243, 237, 222);
+        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
     }
 
     .inicioh1{
@@ -240,7 +254,7 @@ a:active {
         "nosP2 nosP2 nosImg1";
         grid-template-columns: 33.33% 33.33% 33.33%;
         grid-template-rows: 5rem 18rem 18rem auto; 
-        background-color: rgb(243, 237, 222);
+        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
     }
 
     .nosotrosTitulo{
@@ -484,7 +498,7 @@ a:active {
           "img";
         grid-template-columns: 100%;
         grid-template-rows: 5rem 10rem 7rem auto; 
-        background-color: rgb(243, 237, 222);
+        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
     }
     
     .inicioh1{
@@ -550,7 +564,7 @@ a:active {
           "nosP2 nosImg1";
         grid-template-columns: 50% 50%;
         grid-template-rows: 5rem auto 20rem 15rem auto; 
-        background-color: rgb(243, 237, 222);
+        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
     }
     
     .nosotrosTitulo{
@@ -799,7 +813,7 @@ a:active {
             "img";
         grid-template-columns: 100%;
         grid-template-rows: 5rem 10rem 7rem auto; 
-        background-color: rgb(243, 237, 222);
+        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
     }
     
     .inicioh1{
@@ -865,7 +879,7 @@ a:active {
           "nosP2 nosImg1";
         grid-template-columns: 50% 50%;
         grid-template-rows: 5rem auto 20rem 15rem auto; 
-        background-color: rgb(243, 237, 222);
+        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
     }
     
     .nosotrosTitulo{
