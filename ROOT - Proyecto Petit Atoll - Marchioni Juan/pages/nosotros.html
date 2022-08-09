@@ -12,31 +12,45 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<!--link css-->
 	<link rel="stylesheet" href="../css/styles.css">
-	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">	
 </head>
 <body>
-	<!-- Encabezado -->
-	<header class="encabezado">
-        <!-- Logo -->
-        <a href="../index.html"><img class="encabezadoIcono" src="../assets/images/Petit Atoll final.png" alt="Petit Atoll logo"></a>
-        <!-- Iconos Redes Sociales -->
-		<nav class="navLogos">
-			<a href="https://wa.me/+549xxxxxxxxxx" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/whatsapp-logo.png" alt="Whatsapp logo"></a>
-			<a href="https://m.facebook.com/profile.php?id=1628268693" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/Icono Facebook.png" alt="Facebook logo"></a>
-			<a href="https://www.instagram.com/petit_atoll/" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/Instagram-logo-transparent-PNG.png" alt="Instagram logo"></a>
-		</nav>
-        <!-- Barra de navegacion -->
-		<nav class="navBarra">
-			<!-- Lista no ordenada -->
-			<ul class="encabezadoBarra">
-				<li class="encabezadoBarraLinks"><a href="../index.html">INICIO</a></li>
-				<li class="encabezadoBarraLinks"><a href="#">NOSOTROS</a></li>
-				<li class="encabezadoBarraLinks"><a href="petitcampeones.html">PETIT CAMPEONES</a></li>
-				<li class="encabezadoBarraLinks"><a href="tipsymas.html">TIPS Y MAS</a></li>
-				<li class="encabezadoBarraLinks"><a href="contacto.html">CONTACTO</a></li>
-			</ul>
-		</nav>
-	</header>
+    <header>
+        <!-- Barra de Navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-light bg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="encabezadoIcono" src="../assets/images/Petit Atoll final.png" alt="Petit Atoll logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="texto-nav nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="texto-nav nav-item">
+                        <a class="nav-link" href="#">NOSOTROS</a>
+                    </li>
+                    <li class="texto-nav nav-item">
+                        <a class="nav-link" href="petitcampeones.html">PETIT CAMPEONES</a>
+                    </li>
+                    <li class="texto-nav nav-item">
+                        <a class="nav-link" href="tipsymas.html">TIPS Y MAS</a>
+                    </li>
+                    <li class="texto-nav nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Redes Sociales -->
+        <nav class="navLogos">
+            <a href="https://wa.me/+549xxxxxxxxxx" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/whatsapp-logo.png" alt="Whatsapp logo"></a>
+            <a href="https://m.facebook.com/profile.php?id=1628268693" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/Icono Facebook.png" alt="Facebook logo"></a>
+            <a href="https://www.instagram.com/petit_atoll/" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/Instagram-logo-transparent-PNG.png" alt="Instagram logo"></a>
+        </nav>
+    </header>
 	<!-- Contenido -->
 	<!-- Titulo secundario -->
 	<div class="contenidoNosotros">
@@ -51,33 +65,47 @@
 		<img class="nosotrosImg3" src="../assets/images/Salchi bebe en pasto.png" alt="Daschund bebe pasto">
 		<p class="nosotrosP2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, corrupti libero doloremque eveniet accusamus hic laudantium! Fugit libero est, quam earum aut ipsam mollitia, eaque tenetur corporis veritatis aliquam magni!</p>
 	</div>
-	<!-- Pie de pagina -->
+    <!-- Pie de pagina -->
     <footer class="pie">
-        <!-- Palabras de navegacion -->
-        <nav>
-			<!-- Lista no ordenada -->
-            <ul class="piePaginas">
-                <li class="piePaginasLinks"><a href="../index.html">INICIO</a></li>
-				<li class="piePaginasLinks"><a href="#.html">NOSOTROS</a></li>
-				<li class="piePaginasLinks"><a href="petitcampeones.html">PETIT CAMPEONES</a></li>
-				<li class="piePaginasLinks"><a href="tipsymas.html">TIPS Y MAS</a></li>
-				<li class="piePaginasLinks"><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <!-- Redes Sociales -->
-        <div class="pieSegcont">
-            <h3>SEGUINOS / CONTACTATE</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 text-center">
+                    <h3 class="pieSegcont">SEGUINOS / CONTACTATE</h3>
+                    <nav class="pieLogos">
+                        <a href="https://wa.me/+549xxxxxxxxxx" target="_blank"><img class="pieLogosLinks" src="../assets/images/whatsapp-logo.png" alt="Whatsapp logo"></a>
+                        <a href="https://m.facebook.com/profile.php?id=1628268693" target="_blank"><img class="pieLogosLinks" src="../assets/images/Icono Facebook.png" alt="Facebook logo"></a>
+                        <a href="https://www.instagram.com/petit_atoll/" target="_blank"><img class="pieLogosLinks" src="../assets/images/Instagram-logo-transparent-PNG.png" alt="Instagram logo"></a>
+                    </nav>
+                </div>
+            </div>
         </div>
-		<nav class="pieLogos">
-			<a href="https://wa.me/+549xxxxxxxxxx" target="_blank"><img class="pieLogosLinks" src="../assets/images/whatsapp-logo.png" alt="Whatsapp logo"></a>
-			<a href="https://m.facebook.com/profile.php?id=1628268693" target="_blank"><img class="pieLogosLinks" src="../assets/images/Icono Facebook.png" alt="Facebook logo"></a>
-			<a href="https://www.instagram.com/petit_atoll/" target="_blank"><img class="pieLogosLinks" src="../assets/images/Instagram-logo-transparent-PNG.png" alt="Instagram logo"></a>
-		</nav>
-        <div class="pieCopy">
-            <p>&copy; 2022 du Petit Atoll</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-6">
+                    <nav class="nav-pie flex-column align-items-left nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        <a class="nav-link" href="#">NOSOTROS</a>
+                        <a class="nav-link" href="petitcampeones.html">PETIT CAMPEONES</a>
+                        <a class="nav-link" href="tipsymas.html">TIPS Y MAS</a>
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </nav>
+                </div>
+                <div class="col-6 col-6">
+                    <iframe class="pieMapa rounded float-end" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1644.1075878841873!2d-58.55577815652102!3d-34.49742879323289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcba9d4d170c25%3A0x4f7d33a3fb2b8882!2sAvenida%20Avelino%20Rol%C3%B3n%20660!5e0!3m2!1ses-419!2sar!4v1657488426041!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+                </div>
+            </div>
         </div>
-		<!-- Mapa -->
-        <iframe class="pieMapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1644.1075878841873!2d-58.55577815652102!3d-34.49742879323289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcba9d4d170c25%3A0x4f7d33a3fb2b8882!2sAvenida%20Avelino%20Rol%C3%B3n%20660!5e0!3m2!1ses-419!2sar!4v1657488426041!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
-	</footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 text-center">
+                    <div class="pieCopy">
+                        <p>&copy; 2022 du Petit Atoll</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

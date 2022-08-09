@@ -4,977 +4,133 @@
     box-sizing: border-box;
 }
 
-a:link {
-    text-decoration-line: none;
-    color: none;
+.encabezadoIcono{
+    height: 10rem;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
 }
 
-a:visited {
-    text-decoration-line: none;
-    color: none;
-}
-a:hover {
-    text-decoration-line: none;
-    color: none;
-}
-a:active {
-    text-decoration-line: none;
-    color: none;
+@keyframes aparecer{ /*animacion para aparecer logo al comienzo*/
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
-
-/* vista escritorio */
-
-@media only screen and (min-width: 769px){
-
-    .estructuraInicio{
-        display: grid;
-        grid-template-areas:
-            "encabezado"
-            "contenido"
-            "pie";
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-    }
-        
-    .encabezado{
-        grid-area: encabezado;
-        height: 10rem;
-        display: grid;
-        grid-template-areas:
-        "encabezadoIcono x navLogos"
-        "encabezadoIcono navBarra navBarra";
-        grid-template-rows: 50% 50%; 
-        grid-template-columns: 30% 50% 20%;
-        background-color: rgb(208, 233, 232);
-    }
-
-    .encabezadoIcono{
-        grid-area: encabezadoIcono;
-        justify-self: flex-start;
-        align-self: flex-start;
-        height: 10rem;
-        max-width: 100%;
-        animation-duration: 3s;
-        animation-name: aparecer;
-        animation-iteration-count: initial;
-    }
-
-    @keyframes aparecer{ /*animacion para aparecer logo al comienzo*/
-        0% {opacity: 0;}
-        100% {opacity: 1;}
-    }
-
-    .navLogos{
-        grid-area: navLogos;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .encabezadoLogosLinks{
-        height: 2rem;
-    }
-
-    .encabezadoLogosLinks:hover{ /*animacion para escalar logos de redes sociales al pasar el mouse*/
-        transform: scale(1.5);
-    }
-
-    .navBarra{
-        grid-area: navBarra;
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .encabezadoBarra{
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        list-style: none;
-    }
-
-    .encabezadoBarraLinks{
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: 1.5vw;
-        color: rgb(10, 155, 17);
-        background-color: whitesmoke;
-        border: rgb(123, 220, 123) 0.1rem solid;
-        padding: 0.5rem 2.5vw;
-    }
-
-    .encabezadoBarraLinks:hover{ /*animacion para resaltar botones de navegacion al pasar el mouse*/
-        background-color: rgb(123, 220, 123);
-        color: whitesmoke;
-        border: rgb(123, 220, 123) 0.1rem solid;
-    }
-
-    .pie{
-        grid-area: pie;
-        height: 7.5rem;
-        display: grid;
-        grid-template-areas:
-        "navPie pieSegcont pieMapa"
-        "navPie pieLogos pieMapa"
-        "navPie pieCopy pieMapa";
-        grid-template-columns: 20% 60% 20%;
-        grid-template-rows: 30% 40% 30%; 
-        background-color: rgb(155, 225, 155);
-        opacity: 0.8;
-    }
-
-    .piePaginas{
-        grid-area: navPie;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style: none;
-        height: max-content;
-        text-decoration-line: underline;
-    }
-
-    .piePaginasLinks{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
-        line-height: 1.4rem;
-        color: rgb(225, 140, 21);
-        padding-left: 0.5rem;
-    }
-
-    .pieLogos{
-        grid-area: pieLogos;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .pieLogosLinks{
-        height: 1.75rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .pieLogosLinks:hover{ /*animacion para escalar logos de redes sociales al pasar el mouse*/
-        transform: scale(1.25);
-    }
-
-    .pieSegcont{
-        grid-area: pieSegcont;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1rem;
-        color: aliceblue;
-    }
-
-    .pieCopy{
-        grid-area: pieCopy;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1rem;
-        color: aliceblue;
-    }
-
-    .pieMapa{
-        grid-area: pieMapa;
-        display: flex;
-        justify-content: stretch;
-        height: 100%;
-        width: 100%;
-    }   
-
-    .contenidoInicio{
-        grid-area: contenido;
-        display: grid;
-        grid-template-areas:
-        "titulo titulo"
-        "parrafo1 img"
-        "parrafo2 parrafo2";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 5rem auto 5rem; 
-        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244)); /*gradiente de fondo*/
-    }
-
-    .inicioh1{
-        grid-area: titulo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 2.5rem;
-        letter-spacing: 0.2rem;
-        text-decoration: underline;
-        color: rgb(53, 82, 53);
-        z-index: 1;
-    }
-
-    .iniciop1{
-        grid-area: parrafo1;
-        align-self: center;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.75rem;
-        line-height: 2.5rem;
-        color: rgb(187, 99, 99);
-        padding-left: 2rem;
-        z-index: 1;
-    }
-
-    .iniciop2{
-        grid-area: parrafo2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.75rem;
-        text-align: justify;
-        line-height: 2.25rem;
-        color: rgb(45, 149, 168);
-        z-index: 1;
-    }
-
-    .inicioimg1{
-        grid-area: img;
-        justify-self: center;
-        align-self: center;
-        padding-right: 5%;
-        max-height: 100%;
-        height: auto;
-        max-width: 95%;
-    }  
-
-    .contenidoNosotros{
-        grid-area: contenido;
-        display: grid;
-        grid-template-areas:
-        "nosTitulo nosTitulo nosTitulo"
-        "nosVideo nosP1 nosP1"
-        "nosVideo nosImg2 nosImg3"
-        "nosP2 nosP2 nosImg1";
-        grid-template-columns: 33.33% 33.33% 33.33%;
-        grid-template-rows: 5rem 18rem 18rem auto; 
-        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244)); /*gradiente de fondo*/
-    }
-
-    .nosotrosTitulo{
-        grid-area: nosTitulo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 2.5rem;
-        letter-spacing: 0.2rem;
-        text-decoration: underline;
-        color: rgb(53, 82, 53);
-        z-index: 1;
-    }
-
-    .nosotrosVideo1{
-        grid-area: nosVideo;
-        justify-self: right;
-        align-self: flex-end;
-        height: auto;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-
-    .nosotrosImg1{
-        grid-area: nosImg1;
-        justify-self: left;
-        align-self: flex-start;
-        height: auto;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-
-    .nosotrosImg2{
-        grid-area: nosImg2;
-        justify-self: center;
-        align-self: flex-end;
-        height: auto;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-
-    .nosotrosImg3{
-        grid-area: nosImg3;
-        justify-self: left;
-        align-self: flex-end;
-        height: auto;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-
-    .nosotrosP1{
-        grid-area: nosP1;
-        align-self: flex-start;
-        justify-self: flex-start;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.5rem;
-        line-height: 3rem;
-        color: rgb(187, 99, 99);
-        padding: 3vw;
-        z-index: 1;
-    }
-
-    .nosotrosP2{
-        grid-area: nosP2;
-        align-self: flex-start;
-        justify-self: flex-start;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.5rem;
-        line-height: 3rem;
-        color: rgb(187, 99, 99);
-        padding-left: 5vw;
-        padding-right: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 3vw;
-        z-index: 1;
-    }
-
+.navbar-collapse{
+    justify-content: flex-end;
+    align-self: flex-end;
 }
 
+.bg{
+    background-color: rgb(208, 233, 232);
+}
 
-/* vista tablet */
+.texto-nav{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(10, 155, 17);
+    background-color: whitesmoke;
+    border: rgb(123, 220, 123) 0.1rem solid;
+    padding: 0.5rem 1rem;
+}
 
-@media only screen and (min-width: 501px) and (max-width: 768px){
-    
-    .estructuraInicio{
-        display: grid;
-        grid-template-areas:
-            "encabezado"
-            "contenido"
-            "pie";
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-    }
-    
+.navLogos{
+    position: absolute; top:1rem; right: 1rem;
+    width: 12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-    .encabezado{
-        grid-area: encabezado;
-        height: 10rem;
-        display: grid;
-        grid-template-areas:
-          "encabezadoIcono navLogos"
-          "navBarra navBarra";
-        grid-template-rows: 80% 20%; 
-        grid-template-columns: 70% 30%;
-        background-color: rgb(208, 233, 232);
-    }
-    
-    .encabezadoIcono{
-        grid-area: encabezadoIcono;
-        justify-self: flex-start;
-        align-self: flex-start;
-        height: 8rem;
-        max-width: 100%;
-    }
-    
-    .navLogos{
-        grid-area: navLogos;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .encabezadoLogosLinks{
-        height: 1.5rem;
-    }
-    
-    .navBarra{
-        grid-area: navBarra;
-        align-self: flex-end;
-    }
-    
-    .encabezadoBarra{
-        display: flex;
-        justify-content: center;
-        list-style: none;
-    }
-    
-    .encabezadoBarraLinks{
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: 2vw;
-        color: rgb(10, 155, 17);
-        background-color: whitesmoke;
-        border: rgb(123, 220, 123) 0.1rem solid;
-        padding: 1vw 3.7vw;
-    }
-    
-    .pie{
-        grid-area: pie;
-        height: 12.5rem;
-        display: grid;
-        grid-template-areas:
-          "pieSegcont pieSegcont"
-          "pieLogos pieLogos"
-          "navPie pieMapa"
-          "pieCopy pieMapa";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 10% 15% 65% 10%; 
-        background-color: rgb(155, 225, 155);
-        opacity: 0.8;
-    }
-    
-    .piePaginas{
-        grid-area: navPie;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style: none;
-        height: 100%;
-        text-decoration-line: underline;
-    }
-    
-    .piePaginasLinks{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        color: rgb(225, 140, 21);
-        padding-left: 0.5rem;
-    }
-    
-    .pieLogos{
-        grid-area: pieLogos;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .pieLogosLinks{
-        height: 1.35rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    
-    .pieSegcont{
-        grid-area: pieSegcont;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 0.6rem;
-        color: aliceblue;
-    }
-    
-    .pieCopy{
-        grid-area: pieCopy;
-        display: flex;
-        justify-content: flex-start;
-        align-content: flex-start;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 0.7rem;
-        padding-left: 0.5rem;
-        color: aliceblue;
-    }
-    
-    .pieMapa{
-        grid-area: pieMapa;
-        display: flex;
-        justify-content: stretch;
-        height: 100%;
-        width: 100%;
-    }  
-    
-    .contenidoInicio{
-        grid-area: contenido;
-        display: grid;
-        grid-template-areas:
-          "titulo"
-          "parrafo1"
-          "parrafo2"
-          "img";
-        grid-template-columns: 100%;
-        grid-template-rows: 5rem 10rem 7rem auto; 
-        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
-    }
-    
-    .inicioh1{
-        grid-area: titulo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 1.5rem;
-        letter-spacing: 0.1rem;
-        text-decoration: underline;
-        color: rgb(53, 82, 53);
-        z-index: 1;
-    }
-    
-    .iniciop1{
-        grid-area: parrafo1;
-        align-self: center;
-        justify-self: center;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.25rem;
-        line-height: 2rem;
-        color: rgb(187, 99, 99);
-        padding-left: 2rem;
-        padding-right: 2rem;
-        text-align: center;
-        z-index: 1;
-    }
-    
-    .iniciop2{
-        grid-area: parrafo2;
-        align-self: center;
-        justify-self: center;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.25rem;
-        color: rgb(45, 149, 168);
-        padding-left: 2rem;
-        padding-right: 2rem;
-        text-align: center;
-        z-index: 1;
-    }
-    
-    .inicioimg1{
-        grid-area: img;
-        justify-self: center;
-        align-self: center;
-        max-height: 100%;
-        width: auto;
-    }  
-    
-    .contenidoNosotros{
-        grid-area: contenido;
-        display: grid;
-        grid-template-areas:
-          "nosTitulo nosTitulo"
-          "nosP1 nosP1"
-          "nosVideo nosImg2"
-          "nosP2 nosImg3"
-          "nosP2 nosImg1";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 5rem auto 20rem 15rem auto; 
-        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
-    }
-    
-    .nosotrosTitulo{
-        grid-area: nosTitulo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 1.5rem;
-        letter-spacing: 0.1rem;
-        text-decoration: underline;
-        color: rgb(53, 82, 53);
-        z-index: 1;
-    }
-    
-    .nosotrosVideo1{
-        grid-area: nosVideo;
-        justify-self: right;
-        align-self: flex-end;
-        height: auto;
-        max-height: 100%;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-    
-    .nosotrosImg1{
-        grid-area: nosImg1;
-        justify-self: left;
-        align-self: flex-start;
-        height: auto;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-    
-    .nosotrosImg2{
-        grid-area: nosImg2;
-        justify-self: left;
-        align-self: flex-end;
-        height: auto;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-    
-    .nosotrosImg3{
-        grid-area: nosImg3;
-        justify-self: left;
-        align-self: center;
-        height: auto;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-    
-    .nosotrosP1{
-        grid-area: nosP1;
-        align-self: flex-start;
-        justify-self: flex-start;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.25rem;
-        line-height: 2rem;
-        text-align: center;
-        color: rgb(187, 99, 99);
-        padding-left: 5vw;
-        padding-right: 5vw;
-        z-index: 1;
-    }
-    
-    .nosotrosP2{
-        grid-area: nosP2;
-        align-self: center;
-        justify-self: flex-start;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.25rem;
-        line-height: 2rem;
-        text-align: justify;
-        color: rgb(187, 99, 99);
-        padding-left: 5vw;
-        padding-right: 2vw;
-        padding-top: 1.5vw;
-        padding-bottom: 1.5vw;
-        z-index: 1;
-    }
-    
-    }
+.pie{
+    background-color: rgb(155, 225, 155);
+    opacity: 0.8;
+}
 
+.encabezadoLogosLinks{
+    height: 2rem;
+}
 
-    /* vista mobile */
+.encabezadoLogosLinks:hover{ /*animacion para escalar logos de redes sociales al pasar el mouse*/
+    transform: scale(1.5);
+}
 
-@media only screen and (max-width: 500px){
+.pieLogosLinks{
+    height: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
-    .estructuraInicio{
-        display: grid;
-        grid-template-areas:
-            "encabezado"
-            "contenido"
-            "pie";
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto; 
-    }
-    
+.pieLogos{
+    padding-bottom: 1rem;
+}
 
-    .encabezado{
-        grid-area: encabezado;
-        height: 10rem;
-        display: grid;
-        grid-template-areas:
-            "encabezadoIcono navLogos"
-            "encabezadoIcono navBarra";
-        grid-template-rows: 50% 50%; 
-        grid-template-columns: 70% 30%;
-        background-color: rgb(208, 233, 232);
-    }
-    
-    .encabezadoIcono{
-        grid-area: encabezadoIcono;
-        justify-self: flex-start;
-        align-self: flex-start;
-        height: 10rem;
-        max-width: 100%;
-    }
-    
-    .navLogos{
-        grid-area: navLogos;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .encabezadoLogosLinks{
-        height: 1.5rem;
-    }
-    
-    .navBarra{
-        grid-area: navBarra;
-        align-self: flex-end;
-    }
-    
-    .encabezadoBarra{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style: none;
-    }
-    
-    .encabezadoBarraLinks{
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: 0.75rem;
-        color: rgb(10, 155, 17);
-        background-color: whitesmoke;
-        border: rgb(123, 220, 123) 0.1rem solid;
-    }
-    
-    .pie{
-        grid-area: pie;
-        height: 12.5rem;
-        display: grid;
-        grid-template-areas:
-            "pieSegcont pieSegcont"
-            "pieLogos pieLogos"
-            "navPie pieMapa"
-            "pieCopy pieMapa";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 10% 15% 65% 10%; 
-        background-color: rgb(155, 225, 155);
-        opacity: 0.8;
-    }
-    
-    .piePaginas{
-        grid-area: navPie;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style: none;
-        height: 100%;
-        text-decoration-line: underline;
-    }
-    
-    .piePaginasLinks{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        color: rgb(225, 140, 21);
-        padding-left: 0.5rem;
-    }
-    
-    .pieLogos{
-        grid-area: pieLogos;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .pieLogosLinks{
-        height: 1.35rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    
-    .pieSegcont{
-        grid-area: pieSegcont;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 0.6rem;
-        color: aliceblue;
-    }
-    
-    .pieCopy{
-        grid-area: pieCopy;
-        display: flex;
-        justify-content: flex-start;
-        align-content: flex-start;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 0.7rem;
-        padding-left: 0.5rem;
-        color: aliceblue;
-    }
-    
-    
-    .pieMapa{
-        grid-area: pieMapa;
-        display: flex;
-        justify-content: stretch;
-        height: 100%;
-        width: 100%;
-    }  
-    
-    .contenidoInicio{
-        grid-area: contenido;
-        display: grid;
-        grid-template-areas:
-            "titulo"
-            "parrafo1"
-            "parrafo2"
-            "img";
-        grid-template-columns: 100%;
-        grid-template-rows: 5rem 10rem 7rem auto; 
-        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
-    }
-    
-    .inicioh1{
-        grid-area: titulo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 1.5rem;
-        letter-spacing: 0.1rem;
-        text-decoration: underline;
-        color: rgb(53, 82, 53);
-        z-index: 1;
-    }
-    
-    .iniciop1{
-        grid-area: parrafo1;
-        align-self: center;
-        justify-self: center;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.25rem;
-        line-height: 2rem;
-        color: rgb(187, 99, 99);
-        padding-left: 2rem;
-        padding-right: 2rem;
-        text-align: center;
-        z-index: 1;
-    }
-    
-    .iniciop2{
-        grid-area: parrafo2;
-        align-self: center;
-        justify-self: center;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.25rem;
-        color: rgb(45, 149, 168);
-        padding-left: 2rem;
-        padding-right: 2rem;
-        text-align: center;
-        z-index: 1;
-    }
-    
-    .inicioimg1{
-        grid-area: img;
-        justify-self: center;
-        align-self: center;
-        max-height: 100%;
-        width: auto;
-    }  
-    
-    .contenidoNosotros{
-        grid-area: contenido;
-        display: grid;
-        grid-template-areas:
-          "nosTitulo nosTitulo"
-          "nosP1 nosP1"
-          "nosVideo nosImg2"
-          "nosP2 nosImg3"
-          "nosP2 nosImg1";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 5rem auto 20rem 15rem auto; 
-        background-image: linear-gradient(rgb(238, 232, 213),rgb(248, 247, 244));
-    }
-    
-    .nosotrosTitulo{
-        grid-area: nosTitulo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 1.5rem;
-        letter-spacing: 0.1rem;
-        text-decoration: underline;
-        color: rgb(53, 82, 53);
-        z-index: 1;
-    }
-    
-    .nosotrosVideo1{
-        grid-area: nosVideo;
-        justify-self: right;
-        align-self: flex-end;
-        height: auto;
-        max-height: 100%;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-    
-    .nosotrosImg1{
-        grid-area: nosImg1;
-        justify-self: left;
-        align-self: flex-start;
-        height: auto;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-    
-    .nosotrosImg2{
-        grid-area: nosImg2;
-        justify-self: left;
-        align-self: flex-end;
-        height: auto;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-    
-    .nosotrosImg3{
-        grid-area: nosImg3;
-        justify-self: left;
-        align-self: center;
-        height: auto;
-        width: 90%;
-        padding: 5%;
-        background-color: rgb(200, 245, 240);
-    }  
-    
-    .nosotrosP1{
-        grid-area: nosP1;
-        align-self: flex-start;
-        justify-self: flex-start;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.25rem;
-        line-height: 2rem;
-        text-align: center;
-        color: rgb(187, 99, 99);
-        padding-left: 5vw;
-        padding-right: 5vw;
-        z-index: 1;
-    }
-    
-    .nosotrosP2{
-        grid-area: nosP2;
-        align-self: center;
-        justify-self: flex-start;
-        font-family: 'Inter', sans-serif;
-        font-weight: light;
-        font-size: 1.25rem;
-        line-height: 2rem;
-        text-align: justify;
-        color: rgb(187, 99, 99);
-        padding-left: 5vw;
-        padding-right: 2vw;
-        padding-top: 1.5vw;
-        padding-bottom: 1.5vw;
-        z-index: 1;
-    }
-    
-    }
+.pieLogosLinks:hover{ /*animacion para escalar logos de redes sociales al pasar el mouse*/
+    transform: scale(1.25);
+}
+
+.pieSegcont{
+    font-family: 'Inter', sans-serif;
+    font-weight: light;
+    font-size: 1.25rem;
+    color: aliceblue;
+    padding: 0.5rem;
+}
+
+.pieCopy{
+    font-family: 'Inter', sans-serif;
+    font-weight: light;
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+.nav-pie{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 0.5rem;
+    color: rgb(225, 140, 21);
+}
+
+.pieMapa{
+    width: 50%;
+    height: 7rem;
+}   
+
+.contenido{
+    background-image: linear-gradient(rgb(238, 232, 213),rgb(255, 255, 255));
+}
+
+.inicioh1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    text-decoration: underline;
+    color: rgb(53, 82, 53);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.inicioimg1{
+    width: 100%;
+}
+
+.iniciop1{
+    font-family: 'Inter', sans-serif;
+    font-weight: light;
+    text-align: justify;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    color: rgb(187, 99, 99);
+}
+
+.iniciop2{
+    font-family: 'Inter', sans-serif;
+    font-weight: light;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    color: rgb(45, 149, 168);
+    padding-top: 1.5rem;
+}
