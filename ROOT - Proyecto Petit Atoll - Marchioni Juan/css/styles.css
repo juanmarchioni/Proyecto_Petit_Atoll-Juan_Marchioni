@@ -101,7 +101,7 @@
     background-image: linear-gradient(rgb(238, 232, 213),rgb(255, 255, 255));
 }
 
-.inicioh1{
+.titulos{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -133,4 +133,60 @@
     line-height: 2.25rem;
     color: rgb(45, 149, 168);
     padding-top: 1.5rem;
+}
+
+.nosotrosVideo1{
+    justify-self: right;
+    align-self: flex-end;
+    height: auto;
+    width: 80%;
+    padding: 5%;
+    background-color: rgb(200, 245, 240);
+}  
+
+.nosotrosImg1{
+    justify-self: left;
+    align-self: flex-start;
+    height: auto;
+    width: 80%;
+    padding: 5%;
+    background-color: rgb(200, 245, 240);
+}  
+
+.nosotrosImg2{
+    justify-self: center;
+    align-self: flex-end;
+    height: auto;
+    width: 80%;
+    padding: 5%;
+    background-color: rgb(200, 245, 240);
+}  
+
+.nosotrosImg3{
+    justify-self: left;
+    align-self: flex-end;
+    height: auto;
+    width: 80%;
+    padding: 5%;
+    background-color: rgb(200, 245, 240);
+}  
+
+.nosotrosP1{
+    align-self: flex-start;
+    justify-self: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-weight: light;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: rgb(187, 99, 99);
+}
+
+.nosotrosP2{
+    align-self: flex-start;
+    justify-self: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-weight: light;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: rgb(187, 99, 99);
 }
