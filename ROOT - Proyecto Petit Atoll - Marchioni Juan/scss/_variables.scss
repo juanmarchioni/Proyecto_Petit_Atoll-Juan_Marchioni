@@ -1,0 +1,48 @@
+/*Variables*/
+
+/*Variables fondo de contenido*/
+$color-fondo: linear-gradient(rgb(238, 232, 213),rgb(255, 255, 255));
+
+/*Variables de titulos*/
+$fuente-titulo: 'Roboto', sans-serif;
+$estilo-titulo: italic;
+$espesor-titulo: bold;
+$color-titulo: rgb(53, 82, 53);
+$altura-titulo: 2.5rem;
+
+/*Variables de Logo*/
+$altura-logo: 10rem;
+$duracion-aparecer-logo: 3s;
+
+/*Variables de Header*/
+$color-fondo-header: rgb(208, 233, 232);
+
+/*Variables del Nav*/
+$color-fondo-nav: whitesmoke;
+$fuente-nav: 'Roboto', sans-serif;
+$espesor-nav: bold;
+$color-texto-nav: rgb(10, 155, 17);
+$altura-texto-nav: 1rem;
+$borde-nav: rgb(123, 220, 123) 0.1rem solid;
+
+/*Variables del Footer*/
+$color-fondo-footer: rgb(155, 225, 155);
+$fuente-footer: 'Inter', sans-serif;
+$espesor-footer: light;
+$color-texto-footer: aliceblue;
+$altura-texto-footer: 1rem;
+
+/*Variables de contenido index*/
+$fuente-p-index: 'Inter', sans-serif;
+$espesor-p-index: light;
+$altura-p-index: 1.75rem;
+$color-p1-index: rgb(187, 99, 99);
+$color-p2-index: rgb(45, 149, 168);
+
+/*Variables de contenido Nosotros*/
+$color-fondo-imagenes: rgb(200, 245, 240);
+$fuente-p-nosotros: 'Inter', sans-serif;
+$espesor-p-nosotros: light;
+$altura-p-nosotros: 1.5rem;
+$color-p1-nosotros: rgb(187, 99, 99);
+

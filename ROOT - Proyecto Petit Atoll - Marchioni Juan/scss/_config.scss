@@ -1,0 +1,23 @@
+
+
+*{
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenido{
+    background-image: $color-fondo;
+}
+
+.titulos{
+    font-family: $fuente-titulo;
+    font-weight: $espesor-titulo;
+    font-style: $estilo-titulo;
+    font-size: $altura-titulo;
+    letter-spacing: 0.2rem;
+    text-decoration: underline;
+    color: $color-titulo;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
