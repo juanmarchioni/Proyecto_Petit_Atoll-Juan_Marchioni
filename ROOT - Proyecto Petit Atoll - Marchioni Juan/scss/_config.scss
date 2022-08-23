@@ -1,5 +1,3 @@
-
-
 *{
     margin: 10;
     padding: 0;
@@ -11,13 +9,12 @@
 }
 
 .titulos{
-    font-family: $fuente-titulo;
-    font-weight: $espesor-titulo;
-    font-style: $estilo-titulo;
-    font-size: $altura-titulo;
-    letter-spacing: 0.2rem;
-    text-decoration: underline;
-    color: $color-titulo;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    font-family: map-get($titulos, fuente);
+    font-weight: map-get($titulos, espesor);
+    font-style: map-get($titulos, estilo);
+    font-size: map-get($titulos, altura);
+    letter-spacing: map-get($titulos, letter-spacing);
+    text-decoration: map-get($titulos, decoration);
+    color: map-get($titulos, color);
+    padding: map-get($titulos, padding);
 }

@@ -1,0 +1,22 @@
+.tipsListaTexto{
+    @extend .parrafos;
+    font-size: $altura-p-tips;
+    line-height: 2.5rem;
+}
+
+.tablaVacunacion{
+    background-color: rgb(223, 239, 222);
+    margin: 1%;
+}
+
+.tablaDesparacitacion{
+    background-color: rgb(222, 239, 238);
+    margin: 1%;
+}
+
+.titulosTablas{
+    font-family: $fuente-t-tablas;
+    font-weight: $espesor-t-tablas;
+    font-size: $altura-t-tablas;
+    color: $color-t-tablas;
+}

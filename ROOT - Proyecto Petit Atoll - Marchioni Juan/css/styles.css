@@ -1,12 +1,21 @@
 /*Variables*/
 /*Variables fondo de contenido*/
-/*Variables de titulos*/
 /*Variables de Logo*/
 /*Variables de Header*/
 /*Variables del Nav*/
 /*Variables del Footer*/
 /*Variables de contenido index*/
 /*Variables de contenido Nosotros*/
+/*Variables de contenido Nuestros Campeones*/
+/*Variables de contenido Nuestros Contacto*/
+/*Variables de contenido Tips y mas*/
+/*Map de titulos*/
+.parrafos, .iniciop1, .iniciop2, .nosotrosP1, .nosotrosP2, .campeonesP1, .tipsListaTexto, .contactoP1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: light;
+  color: #bb6363;
+  text-align: justify; }
+
 * {
   margin: 10;
   padding: 0;
@@ -19,12 +28,11 @@
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-style: italic;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
   text-decoration: underline;
   color: #355235;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding: 1rem; }
 
 .encabezadoIcono {
   height: 10rem;
@@ -49,10 +57,10 @@
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  color: #0a9b11;
-  border: #7bdc7b 0.1rem solid;
-  background-color: whitesmoke;
-  padding: 0.5rem 1rem; }
+  color: black;
+  padding: 0.5rem; }
+  .texto-nav:hover {
+    background-color: #00fbff; }
 
 .navLogos {
   position: absolute;
@@ -63,24 +71,24 @@
   justify-content: space-around;
   align-items: center; }
 
-.pie {
-  background-color: #9be19b;
-  opacity: 0.8; }
-
 .encabezadoLogosLinks {
   height: 2rem; }
   .encabezadoLogosLinks:hover {
     transform: scale(1.5); }
 
+.pie {
+  background-color: #9be19b;
+  opacity: 0.8; }
+
 .pieLogosLinks {
   height: 1.75rem;
   padding-left: 1rem;
   padding-right: 1rem; }
+  .pieLogosLinks:hover {
+    transform: scale(1.25); }
 
 .pieLogos {
   padding-bottom: 1rem; }
-  .pieLogos:hover {
-    transform: scale(1.25); }
 
 .pieSegcont {
   font-family: "Inter", sans-serif;
@@ -98,31 +106,28 @@
 .nav-pie {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-  line-height: 0.5rem;
-  color: aliceblue; }
+  color: aliceblue;
+  line-height: 0.9rem; }
 
 .pieMapa {
   width: 50%;
   height: 7rem; }
 
 .inicioimg1 {
-  width: 100%; }
+  height: auto;
+  width: 80%; }
 
 .iniciop1 {
-  font-family: "Inter", sans-serif;
-  font-weight: light;
-  text-align: justify;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
-  color: #bb6363; }
+  padding: 2rem; }
 
 .iniciop2 {
-  font-family: "Inter", sans-serif;
-  font-weight: light;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   color: #2d95a8;
-  padding-top: 1.5rem; }
+  padding-top: 1.5rem;
+  text-align: center; }
 
 .nosotrosVideo1 {
   justify-self: right;
@@ -159,17 +164,50 @@
 .nosotrosP1 {
   align-self: flex-start;
   justify-self: flex-start;
-  font-family: "Inter", sans-serif;
-  font-weight: light;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  color: #bb6363; }
+  font-size: 1.25rem;
+  line-height: 3rem; }
 
 .nosotrosP2 {
   align-self: flex-start;
   justify-self: flex-start;
-  font-family: "Inter", sans-serif;
-  font-weight: light;
+  font-size: 1.25rem;
+  line-height: 3rem; }
+
+.carruselV1 {
+  padding: 2%;
+  background-color: #e0992f; }
+
+.carruselV2 {
+  padding: 2%;
+  background-color: #e5b56c; }
+
+.campeonesP1 {
+  font-size: 1.25rem;
+  line-height: 3rem; }
+
+.campeonesTitulo {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 1.5rem;
-  line-height: 3rem;
-  color: #bb6363; }
+  color: #355235; }
+
+.tipsListaTexto {
+  font-size: 1.25rem;
+  line-height: 2.5rem; }
+
+.tablaVacunacion {
+  background-color: #dfefde;
+  margin: 1%; }
+
+.tablaDesparacitacion {
+  background-color: #deefee;
+  margin: 1%; }
+
+.titulosTablas {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #355235; }
+
+.contactoP1 {
+  font-size: 1.25rem; }

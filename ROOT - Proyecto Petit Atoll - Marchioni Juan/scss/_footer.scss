@@ -3,24 +3,17 @@
     opacity: 0.8;
 }
 
-.encabezadoLogosLinks{
-    height: 2rem;
-    &:hover{
-        transform: scale(1.5);
-    }
-}
-
 .pieLogosLinks{
     height: 1.75rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    &:hover{
+        transform: scale(1.25);
+    }
 }
 
 .pieLogos{
     padding-bottom: 1rem;
-    &:hover{
-        transform: scale(1.25);
-    }
 }
 
 .pieSegcont{
@@ -41,8 +34,8 @@
 .nav-pie{
     font-family: $fuente-footer;
     font-size: $altura-texto-footer;
-    line-height: 0.5rem;
     color: $color-texto-footer;
+    line-height: 0.9rem;
 }
 
 .pieMapa{

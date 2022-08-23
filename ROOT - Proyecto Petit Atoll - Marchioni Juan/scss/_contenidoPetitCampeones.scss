@@ -1,0 +1,22 @@
+.carruselV1{
+    padding: 2%;
+    background-color: rgb(224, 153, 47);
+}
+
+.carruselV2{
+    padding: 2%;
+    background-color: rgb(229, 181, 108);
+}
+
+.campeonesP1{
+    @extend .parrafos;   
+    font-size: $altura-p-campeones;
+    line-height: 3rem;
+}
+
+.campeonesTitulo{
+    font-family: $fuente-t-campeones;
+    font-weight: $espesor-t-campeones;
+    font-size: $altura-t-campeones;
+    color: $color-t-campeones;
+}

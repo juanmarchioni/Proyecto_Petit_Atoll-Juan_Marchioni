@@ -5,28 +5,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icono de sitio web en pestaña del navegador -->
 	<link rel="shortcut icon" href="../assets/images/Petit Atoll final.png">
-	<title>Proyecto Petit Atoll</title>
+	<title>Petit Atoll - Tips y más</title>
 	<!--link google fonts-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<!--link css-->
 	<link rel="stylesheet" href="../css/styles.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--Descripcion de página-->
+    <meta name="description"  content="Aqui encontrarás los mejores cuidados y recomendaciones indispensables para tu mejor compañero">
+	<!--Palabras Claves-->
+	<meta name="keywords"  content="TIPS, CALENDARIO, VACUNACION, DESPARASITACION, DASHCHUND, CRIADERO, PETIT ATOLL, SALCHICHA, PELO LARGO, PERRO">
+    <!-- CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <!-- Barra de Navegacion -->
         <nav class="navbar navbar-expand-lg navbar-light bg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="encabezadoIcono" src="../assets/images/Petit Atoll final.png" alt="Petit Atoll logo"></a>
+                <a class="navbar-brand" href="#"><img class="encabezadoIcono" src="../assets/images/Petit Atoll final.png" alt="Petit Atoll logo" loading="lazy"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="texto-nav nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        <a class="nav-link" href="../index.html">INICIO</a>
                     </li>
                     <li class="texto-nav nav-item">
                         <a class="nav-link" href="nosotros.html">NOSOTROS</a>
@@ -35,7 +40,7 @@
                         <a class="nav-link" href="petitcampeones.html">PETIT CAMPEONES</a>
                     </li>
                     <li class="texto-nav nav-item">
-                        <a class="nav-link" href="#">TIPS Y MAS</a>
+                        <a class="nav-link active" aria-current="page" href="#">TIPS Y MAS</a>
                     </li>
                     <li class="texto-nav nav-item">
                         <a class="nav-link" href="contacto.html">CONTACTO</a>
@@ -46,156 +51,182 @@
         </nav>
         <!-- Redes Sociales -->
         <nav class="navLogos">
-            <a href="https://wa.me/+549xxxxxxxxxx" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/whatsapp-logo.png" alt="Whatsapp logo"></a>
-            <a href="https://m.facebook.com/profile.php?id=1628268693" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/Icono Facebook.png" alt="Facebook logo"></a>
-            <a href="https://www.instagram.com/petit_atoll/" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/Instagram-logo-transparent-PNG.png" alt="Instagram logo"></a>
+            <a href="https://wa.me/+549xxxxxxxxxx" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/whatsapp-logo.png" alt="Whatsapp logo" loading="lazy"></a>
+            <a href="https://m.facebook.com/profile.php?id=1628268693" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/Icono Facebook.png" alt="Facebook logo" loading="lazy"></a>
+            <a href="https://www.instagram.com/petit_atoll/" target="_blank"><img class="encabezadoLogosLinks" src="../assets/images/Instagram-logo-transparent-PNG.png" alt="Instagram logo" loading="lazy"></a>
         </nav>
     </header>
 	<!-- Contenido -->
 	<div class="contenido">
-		<!-- Titulo secundario -->
-		<h2 class="tipsTitulo">TIPS A LA HORA DE TENER UN DASHCHUND PELO LARGO</h2>
-		<!-- Lista no ordenada -->
-		<ul class="tipsLista">
-			<li class="tipsListaTexto">Cepillar su pelo al menos 2 veces a la semana.</a></li>
-			<li class="tipsListaTexto">Que realice actividades ó al menos 2 paseos diarios de 20 minutos cada uno.</a></li>
-			<li class="tipsListaTexto">Debido a su larga columna alzarlo o colocar rampas si debe subir a lugares altos y evitar que salte repetitivamente, suba o baje escaleras.</li>
-			<li class="tipsListaTexto">Evitar sobrepeso alimentandolo con la ración diaria recomendada.</li>
-			<li class="tipsListaTexto">Vacunarlo y desparacitarlo según calendario (ver tablas de abajo).</li>
-		</ul>
-		<!-- Imagenes -->
-		<img class="tipsImg01" src="../assets/images/Salchi de frente.png" alt="Daschund de frente peinado">
-		<img class="tipsImg02" src="../assets/images/Salchi posando peinada.png" alt="Daschund posando peinada">
-		<div class="tipsVacunacion">
-			<!-- Tabla -->
-			<table class="tipsTablaVacunacion">
-			<caption>CALENDARIO DE VACUNACIÓN</caption>
-			<thead>
-				<tr>
-					<th></th>
-					<th>PARVO</th>
-					<th>MOQUILLO</th>
-					<th>EPATITIS</th>
-					<th>PARAINFLUENZA</th>
-					<th>LEPTOSPIROSIS</th>
-					<th>RABIA</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>6 semanas</td>
-					<td>X</td>
-					<td>X</td>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-				</tr>
-				<tr>
-					<td>9 semanas</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td> </td>
-					<td> </td>
-				</tr>
-				<tr>
-					<td>12 semanas</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td> </td>
-				</tr>
-				<tr>
-					<td>16 semanas</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td> </td>
-				</tr>
-				<tr>
-					<td>20 semanas</td>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-					<td>X</td>
-				</tr>
-				<tr>
-					<td>24 semanas</td>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-					<td>X</td>
-				</tr>
-				<tr>
-					<td>1er año</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td> </td>
-				</tr>
-				<tr>
-					<td>Anualmente</td>
-					<td>X</td>
-					<td> </td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-				</tr>
-				<tr>
-					<td>Cada 3 años</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-					<td>X</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<td> </td>
-				<td colspan="6">* Pueden variar según condiciones del perro y recomendaciones de su veterinario</td>
-			</tfoot>
-			</table>
+		<div class="container-fluid d-flex justify-content-center">
+			<div class="container row">
+				<h2 class="titulos text-center">TIPS A LA HORA DE TENER UN DASHCHUND PELO LARGO</h2>
+				<div class="container col-lg-7 col-xs-12">
+					<ul>
+						<li class="tipsListaTexto">Cepillar su pelo al menos 2 veces a la semana.</a></li>
+						<li class="tipsListaTexto">Que realice actividades ó al menos 2 paseos diarios de 20 minutos cada uno.</a></li>
+						<li class="tipsListaTexto">Debido a su larga columna alzarlo o colocar rampas si debe subir a lugares altos y evitar que salte repetitivamente, suba o baje escaleras.</li>
+						<li class="tipsListaTexto">Evitar sobrepeso alimentandolo con la ración diaria recomendada.</li>
+						<li class="tipsListaTexto">Vacunarlo y desparasitarlo según calendario (ver tablas de abajo).</li>
+					</ul>
+				</div>
+				<div class="container col-lg-4 col-xs-12">
+					<div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-touch="false" data-bs-ride="carousel">
+						<div class="carousel-inner">
+						  <div class="carousel-item active data-bs-interval=150">
+							<img src="../assets/images/Salchi de frente.png" class="d-block w-100" alt="Daschund de frente peinado" loading="lazy">
+						  </div>
+						  <div class="carousel-item data-bs-interval=150">
+							<img src="../assets/images/Salchi posando peinada.png" class="d-block w-100" alt="Daschund posando peinada" loading="lazy">
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<!-- Imagen -->
-		<div class="tipsDesparacitacion">
-			<!-- Tabla -->
-			</table>
-			<br>
-			<table class="tipsTablaDesparacitacion">
-			<caption>DESPARACITACIÓN INTERNA</caption>
-			<thead>
-				<tr>
-					<th>CACHORROS</th>
-					<th>ADULTOS</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Cada mes hasta el 1er año</td>
-					<td>Cada 3 meses de por vida</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<td colspan="2">* Puede variar según condiciones del perro y recomendaciones de su veterinario</td>
-			</tfoot>
-			</table>
+		<div class="container tablaVacunacion">
+			<h5 class="titulosTablas text-center">CALENDARIO DE VACUNACION</h5>
+			<div class="table-responsive">
+				<table class="table align-middle text-center">
+				<thead>
+					<tr>
+						<th></th>
+						<th>PARVO</th>
+						<th>MOQUILLO</th>
+						<th>EPATITIS</th>
+						<th>PARAINFLUENZA</th>
+						<th>LEPTOSPIROSIS</th>
+						<th>RABIA</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6 semanas</td>
+						<td>X</td>
+						<td>X</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>9 semanas</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>12 semanas</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>16 semanas</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>20 semanas</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td>X</td>
+					</tr>
+					<tr>
+						<td>24 semanas</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td>X</td>
+					</tr>
+					<tr>
+						<td>1er año</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>Anualmente</td>
+						<td>X</td>
+						<td> </td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+					</tr>
+					<tr>
+						<td>Cada 3 años</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<td> </td>
+					<td colspan="6">* Pueden variar según condiciones del perro y recomendaciones de su veterinario</td>
+				</tfoot>
+				</table>
+			</div>
 		</div>
-		<img class="tipsImg03" src="../assets/images/Bebitos besito.png" alt="Daschund bebitos besito">
-		<img class="tipsImg04" src="../assets/images/Bebitos acostados.png" alt="Daschund bebitos acostados">
+		<div class="container-fluid d-flex justify-content-center">
+			<div class="container row">
+				<div class="container col-lg-3 col-xs-12">
+					<div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-touch="false" data-bs-ride="carousel">
+						<div class="carousel-inner">
+						  <div class="carousel-item active data-bs-interval=150">
+							<img src="../assets/images/Bebitos besito.png" class="d-block w-100" alt="Daschund bebitos besito" loading="lazy">
+						  </div>
+						  <div class="carousel-item data-bs-interval=150">
+							<img src="../assets/images/Bebitos acostados.png" class="d-block w-100" alt="Daschund bebitos acostados" loading="lazy">
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="container col-lg-9 col-xs-12 tablaDesparacitacion">
+					<h5 class="titulosTablas text-center">DESPARACITACION INTERNA</h5>
+					<div class="table-responsive">
+						<table class="table align-middle text-center">
+							<thead>
+								<tr>
+									<th>CACHORROS</th>
+									<th>ADULTOS</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Cada mes hasta el 1er año</td>
+									<td>Cada 3 meses de por vida</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<td colspan="2">* Puede variar según condiciones del perro y recomendaciones de su veterinario</td>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
     <!-- Pie de pagina -->
     <footer class="pie">
@@ -204,18 +235,18 @@
                 <div class="col-lg-12 col-xs-12 text-center">
                     <h3 class="pieSegcont">SEGUINOS / CONTACTATE</h3>
                     <nav class="pieLogos">
-                        <a href="https://wa.me/+549xxxxxxxxxx" target="_blank"><img class="pieLogosLinks" src="../assets/images/whatsapp-logo.png" alt="Whatsapp logo"></a>
-                        <a href="https://m.facebook.com/profile.php?id=1628268693" target="_blank"><img class="pieLogosLinks" src="../assets/images/Icono Facebook.png" alt="Facebook logo"></a>
-                        <a href="https://www.instagram.com/petit_atoll/" target="_blank"><img class="pieLogosLinks" src="../assets/images/Instagram-logo-transparent-PNG.png" alt="Instagram logo"></a>
+                        <a href="https://wa.me/+549xxxxxxxxxx" target="_blank"><img class="pieLogosLinks" src="../assets/images/whatsapp-logo.png" alt="Whatsapp logo" loading="lazy"></a>
+                        <a href="https://m.facebook.com/profile.php?id=1628268693" target="_blank"><img class="pieLogosLinks" src="../assets/images/Icono Facebook.png" alt="Facebook logo" loading="lazy"></a>
+                        <a href="https://www.instagram.com/petit_atoll/" target="_blank"><img class="pieLogosLinks" src="../assets/images/Instagram-logo-transparent-PNG.png" alt="Instagram logo" loading="lazy"></a>
                     </nav>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6 col-6">
-                    <nav class="nav-pie flex-column align-items-left nav">
-                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                <div class="mb-5 col-6 col-6">
+                    <nav class="d-flex align-items-start flex-column nav-pie nav">
+                        <a class="nav-link" href="../index.html">INICIO</a>
                         <a class="nav-link" href="nosotros.html">NOSOTROS</a>
                         <a class="nav-link" href="petitcampeones.html">PETIT CAMPEONES</a>
                         <a class="nav-link" href="#">TIPS Y MAS</a>
@@ -223,7 +254,7 @@
                     </nav>
                 </div>
                 <div class="col-6 col-6">
-                    <iframe class="pieMapa rounded float-end" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1644.1075878841873!2d-58.55577815652102!3d-34.49742879323289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcba9d4d170c25%3A0x4f7d33a3fb2b8882!2sAvenida%20Avelino%20Rol%C3%B3n%20660!5e0!3m2!1ses-419!2sar!4v1657488426041!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+                    <iframe class="pieMapa rounded float-end img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1644.1075878841873!2d-58.55577815652102!3d-34.49742879323289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcba9d4d170c25%3A0x4f7d33a3fb2b8882!2sAvenida%20Avelino%20Rol%C3%B3n%20660!5e0!3m2!1ses-419!2sar!4v1657488426041!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
                 </div>
             </div>
         </div>
@@ -238,6 +269,7 @@
         </div>
     </footer>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
