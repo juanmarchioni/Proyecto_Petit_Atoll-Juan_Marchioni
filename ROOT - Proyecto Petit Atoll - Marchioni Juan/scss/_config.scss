@@ -14,7 +14,6 @@
     font-style: map-get($titulos, estilo);
     font-size: map-get($titulos, altura);
     letter-spacing: map-get($titulos, letter-spacing);
-    text-decoration: map-get($titulos, decoration);
     color: map-get($titulos, color);
     padding: map-get($titulos, padding);
 }
