@@ -6,12 +6,14 @@
 
 .tablaVacunacion{
     background-color: rgb(223, 239, 222);
-    margin: 1%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .tablaDesparacitacion{
     background-color: rgb(222, 239, 238);
-    margin: 1%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .titulosTablas{
@@ -19,4 +21,13 @@
     font-weight: $espesor-t-tablas;
     font-size: $altura-t-tablas;
     color: $color-t-tablas;
+}
+
+.carouselTYMsuperior{
+    @include alto-ancho(auto, 90%);
+}
+
+.carouselTYMinferior{
+    @include alto-ancho(auto, 90%);
+    margin-bottom: 2rem;
 }

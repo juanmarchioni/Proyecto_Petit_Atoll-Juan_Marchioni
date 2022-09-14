@@ -4,8 +4,21 @@
     box-sizing: border-box;
 }
 
+.page{
+    background-color: $color-fondo;
+}
+
+.head{
+    min-height: 15vh;
+}
+
 .contenido{
-    background-image: $color-fondo;
+    min-height: 71vh;
+    background-color: rgb(115, 140, 90);
+}
+
+.pie{
+    min-height: 14vh;
 }
 
 .titulos{
@@ -16,4 +29,5 @@
     letter-spacing: map-get($titulos, letter-spacing);
     color: map-get($titulos, color);
     padding: map-get($titulos, padding);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }

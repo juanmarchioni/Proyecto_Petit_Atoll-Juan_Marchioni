@@ -1,7 +1,6 @@
 /*Variables*/
 /*Variables fondo de contenido*/
 /*Variables de Logo*/
-/*Variables de Header*/
 /*Variables del Nav*/
 /*Variables del Footer*/
 /*Variables de contenido index*/
@@ -10,32 +9,42 @@
 /*Variables de contenido Nuestros Contacto*/
 /*Variables de contenido Tips y mas*/
 /*Map de titulos*/
-.parrafos, .iniciop1, .iniciop2, .nosotrosP1, .nosotrosP2, .campeonesP1, .tipsListaTexto, .contactoP1 {
+.parrafos, .inicioP, .nosotrosP1, .campeonesP1, .tipsListaTexto, .contactoP1 {
   font-family: 'Inter', sans-serif;
-  font-weight: light;
-  color: #bb6363;
-  text-align: justify; }
+  text-align: justify;
+  color: white; }
 
 * {
   margin: 10;
   padding: 0;
   box-sizing: border-box; }
 
+.page {
+  background-color: #ccd99c; }
+
+.head {
+  min-height: 15vh; }
+
 .contenido {
-  background-image: linear-gradient(#eee8d5, white); }
+  min-height: 71vh;
+  background-color: #738c5a; }
+
+.pie {
+  min-height: 14vh; }
 
 .titulos {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 0.2rem;
-  color: #355235;
-  padding: 1rem; }
+  color: #f8f1ee;
+  padding: 2rem;
+  text-shadow: 2px 2px 2px black; }
 
 .encabezadoIcono {
-  height: 10rem;
-  animation-duration: 3s;
+  height: 5.25rem;
+  animation-duration: 5s;
   animation-name: aparecer;
   animation-iteration-count: initial; }
 
@@ -49,146 +58,111 @@
   justify-content: flex-end;
   align-self: flex-end; }
 
-.bg {
-  background-color: #d0e9e8; }
-
 .texto-nav {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  color: black;
-  padding: 0.5rem; }
-  .texto-nav:hover {
-    background-color: #00fbff; }
-
-.navLogos {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 12rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-
-.encabezadoLogosLinks {
-  height: 2rem; }
-  .encabezadoLogosLinks:hover {
-    transform: scale(1.5); }
-
-.pie {
-  background-color: #ccebc0;
-  opacity: 0.8; }
-
-.pieLogosLinks {
-  height: 1.75rem;
   padding-left: 1rem;
   padding-right: 1rem; }
+  .texto-nav:hover {
+    background-color: #d97e4a;
+    border-radius: 15px; }
+
+.pieLogosLinks {
+  margin-bottom: 1rem;
+  color: #d97e4a; }
   .pieLogosLinks:hover {
     transform: scale(1.25); }
-
-.pieLogos {
-  padding-bottom: 1rem; }
-
-.pieSegcont {
-  font-family: "Inter", sans-serif;
-  font-weight: light;
-  font-size: 1rem;
-  color: #0088ff;
-  padding: 0.5rem; }
 
 .pieCopy {
   font-family: "Inter", sans-serif;
   font-weight: light;
   font-size: 1rem;
-  color: #0088ff; }
+  color: #738c5a; }
 
-.nav-pie {
+.logoFCA {
+  margin-top: 0.75rem;
+  height: 3rem; }
+
+.textoFCA {
+  margin-top: 0.25rem;
   font-family: "Inter", sans-serif;
+  font-weight: bold;
   font-size: 1rem;
-  color: #0088ff;
-  line-height: 0.9rem; }
+  color: #738c5a; }
 
-.pieMapa {
-  width: 50%;
-  height: 7rem; }
-
-.inicioimg1 {
-  height: auto;
-  width: 100%; }
-
-.iniciop1 {
+.inicioP {
   font-size: 1.5rem;
   line-height: 2.5rem;
-  padding: 2rem; }
+  padding: 2rem;
+  text-shadow: 2px 2px 2px black; }
 
-.iniciop2 {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  color: #2d95a8;
-  padding-top: 1.5rem;
-  text-align: center; }
+.bckImg {
+  background-image: url("../assets/images/IndexImgFondo.JPG");
+  background-size: cover;
+  background-position: center; }
 
 .nosotrosVideo1 {
   justify-self: right;
   align-self: flex-end;
   height: auto;
-  width: 90%;
+  width: 80%;
   padding: 5%;
-  background-color: #c8f5f0; }
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: #ccd99c; }
 
 .nosotrosImg1 {
   justify-self: left;
   align-self: flex-start;
   height: auto;
-  width: 90%;
+  width: 80%;
   padding: 5%;
-  background-color: #c8f5f0; }
+  margin: 2rem;
+  background-color: #ccd99c; }
 
 .nosotrosImg2 {
   justify-self: center;
   align-self: flex-end;
   height: auto;
-  width: 90%;
+  width: 80%;
   padding: 5%;
-  background-color: #c8f5f0; }
+  margin: 2rem;
+  background-color: #ccd99c; }
 
 .nosotrosImg3 {
   justify-self: left;
   align-self: flex-end;
   height: auto;
-  width: 90%;
+  width: 80%;
   padding: 5%;
-  background-color: #c8f5f0; }
+  margin: 2rem;
+  background-color: #ccd99c; }
 
 .nosotrosP1 {
   align-self: flex-start;
   justify-self: flex-start;
   font-size: 1.25rem;
-  line-height: 3rem; }
+  line-height: 2.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem; }
 
-.nosotrosP2 {
-  align-self: flex-start;
-  justify-self: flex-start;
-  font-size: 1.25rem;
-  line-height: 3rem; }
-
-.carruselV1 {
+.carrusel {
   padding: 2%;
-  background-color: #e0992f; }
-
-.carruselV2 {
-  padding: 2%;
-  background-color: #e5b56c; }
+  background-color: #ccd99c;
+  margin-bottom: 2rem; }
 
 .campeonesP1 {
   font-size: 1.25rem;
-  line-height: 3rem; }
+  line-height: 2.5rem;
+  margin: 1rem; }
 
 .campeonesTitulo {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1.5rem;
-  color: #355235; }
+  font-size: 1.25rem;
+  color: #591202;
+  margin-bottom: 1rem; }
 
 .tipsListaTexto {
   font-size: 1.25rem;
@@ -196,17 +170,28 @@
 
 .tablaVacunacion {
   background-color: #dfefde;
-  margin: 1%; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .tablaDesparacitacion {
   background-color: #deefee;
-  margin: 1%; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .titulosTablas {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.75rem;
   color: #355235; }
+
+.carouselTYMsuperior {
+  height: auto;
+  width: 90%; }
+
+.carouselTYMinferior {
+  height: auto;
+  width: 90%;
+  margin-bottom: 2rem; }
 
 .contactoP1 {
   font-size: 1.25rem; }

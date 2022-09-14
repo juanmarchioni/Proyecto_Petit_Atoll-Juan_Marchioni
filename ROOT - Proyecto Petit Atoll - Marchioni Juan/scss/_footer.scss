@@ -1,27 +1,9 @@
-.pie{
-    background-color: $color-fondo-footer;
-    opacity: 0.8;
-}
-
 .pieLogosLinks{
-    height: 1.75rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(217, 126, 74);
     &:hover{
         transform: scale(1.25);
     }
-}
-
-.pieLogos{
-    padding-bottom: 1rem;
-}
-
-.pieSegcont{
-    font-family: $fuente-footer;
-    font-weight: $espesor-footer;
-    font-size: $altura-texto-footer;
-    color: $color-texto-footer;
-    padding: 0.5rem;
 }
 
 .pieCopy{
@@ -29,16 +11,17 @@
     font-weight: $espesor-footer;
     font-size: $altura-texto-footer;
     color: $color-texto-footer;
+} 
+
+.logoFCA{
+    margin-top: 0.75rem;
+    height: 3rem;
 }
 
-.nav-pie{
+.textoFCA{
+    margin-top: 0.25rem;
     font-family: $fuente-footer;
+    font-weight: bold;
     font-size: $altura-texto-footer;
     color: $color-texto-footer;
-    line-height: 0.9rem;
 }
-
-.pieMapa{
-    width: 50%;
-    height: 7rem;
-}   

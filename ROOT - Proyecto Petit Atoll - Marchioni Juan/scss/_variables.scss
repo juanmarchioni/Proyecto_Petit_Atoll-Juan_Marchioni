@@ -1,44 +1,36 @@
 /*Variables*/
 
 /*Variables fondo de contenido*/
-$color-fondo: linear-gradient(rgb(238, 232, 213),rgb(255, 255, 255));
+$color-fondo: rgb(204, 217, 156);
 
 /*Variables de Logo*/
-$altura-logo: 10rem;
-$duracion-aparecer-logo: 3s;
-
-/*Variables de Header*/
-$color-fondo-header: rgb(208, 233, 232);
+$altura-logo: 5.25rem;
+$duracion-aparecer-logo: 5s;
 
 /*Variables del Nav*/
-$color-fondo-nav: whitesmoke;
 $fuente-nav: 'Roboto', sans-serif;
 $espesor-nav: bold;
-$color-texto-nav: rgb(0, 0, 0);
 $altura-texto-nav: 1rem;
-$borde-nav: rgb(123, 220, 123) 0.1rem solid;
 
 /*Variables del Footer*/
-$color-fondo-footer: rgb(204, 235, 192);
 $fuente-footer: 'Inter', sans-serif;
 $espesor-footer: light;
-$color-texto-footer: rgb(0, 136, 255);
+$color-texto-footer: rgb(115, 140, 90);
 $altura-texto-footer: 1rem;
 
 /*Variables de contenido index*/
 $altura-p-index: 1.5rem;
-$color-p2-index: rgb(45, 149, 168);
 
 /*Variables de contenido Nosotros*/
-$color-fondo-imagenes: rgb(200, 245, 240);
+$color-fondo-imagenes: rgb(204, 217, 156);
 $altura-p-nosotros: 1.25rem;
 
 /*Variables de contenido Nuestros Campeones*/
 $altura-p-campeones: 1.25rem;
 $fuente-t-campeones: 'Roboto', sans-serif;
 $espesor-t-campeones: bold;
-$altura-t-campeones: 1.5rem;
-$color-t-campeones: rgb(53, 82, 53);
+$altura-t-campeones: 1.25rem;
+$color-t-campeones: rgb(89, 18, 2);
 
 /*Variables de contenido Nuestros Contacto*/
 $altura-p-contacto: 1.25rem;

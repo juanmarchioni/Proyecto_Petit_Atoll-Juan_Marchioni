@@ -15,32 +15,14 @@
     align-self: flex-end;
 }
 
-.bg{
-    background-color: $color-fondo-header;
-}
-
 .texto-nav{
     font-family: $fuente-nav;
     font-weight: $espesor-nav;
     font-size: $altura-texto-nav;
-    color: $color-texto-nav;
-    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     &:hover{
-        background-color: rgb(0, 251, 255);
-    }
-}
-
-.navLogos{
-    position: absolute; top:1rem; right: 1rem;
-    width: 12rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.encabezadoLogosLinks{
-    height: 2rem;
-    &:hover{
-        transform: scale(1.5);
+        background-color: rgb(217, 126, 74);
+        border-radius: 15px
     }
 }

@@ -1,32 +1,37 @@
 .nosotrosVideo1{
     justify-self: right;
     align-self: flex-end;
-    @include alto-ancho(auto, 90%);
+    @include alto-ancho(auto, 80%);
     padding: 5%;
-    background-color: rgb(200, 245, 240);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: $color-fondo-imagenes;
 }  
 
 .nosotrosImg1{
     justify-self: left;
     align-self: flex-start;
-    @include alto-ancho(auto, 90%);
+    @include alto-ancho(auto, 80%);
     padding: 5%;
+    margin: 2rem;
     background-color: $color-fondo-imagenes;
 }  
 
 .nosotrosImg2{
     justify-self: center;
     align-self: flex-end;
-    @include alto-ancho(auto, 90%);
+    @include alto-ancho(auto, 80%);
     padding: 5%;
+    margin: 2rem;
     background-color: $color-fondo-imagenes;
 }  
 
 .nosotrosImg3{
     justify-self: left;
     align-self: flex-end;
-    @include alto-ancho(auto, 90%);
+    @include alto-ancho(auto, 80%);
     padding: 5%;
+    margin: 2rem;
     background-color: $color-fondo-imagenes;
 }  
 
@@ -35,13 +40,7 @@
     align-self: flex-start;
     justify-self: flex-start;
     font-size: $altura-p-nosotros;
-    line-height: 3rem;
-}
-
-.nosotrosP2{
-    @extend .parrafos;
-    align-self: flex-start;
-    justify-self: flex-start;
-    font-size: $altura-p-nosotros;
-    line-height: 3rem;
+    line-height: 2.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }

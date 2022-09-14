@@ -1,19 +1,13 @@
-.inicioimg1{
-    @include alto-ancho(auto, 100%);
-}
-
-.iniciop1{
+.inicioP{
     @extend .parrafos;
     font-size: $altura-p-index;
     line-height: 2.5rem;
     padding: 2rem;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
-.iniciop2{
-    @extend .parrafos;
-    font-size: $altura-p-index;
-    line-height: 2.5rem;
-    color: $color-p2-index;
-    padding-top: 1.5rem;
-    text-align: center;
+.bckImg{
+    background-image: url("../assets/images/IndexImgFondo.JPG");
+    background-size: cover;
+    background-position: center;
 }
