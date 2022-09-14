@@ -1,6 +1,6 @@
 .pieLogosLinks{
+    color: $color-redes;
     margin-bottom: 1rem;
-    color: rgb(217, 126, 74);
     &:hover{
         transform: scale(1.25);
     }
@@ -14,14 +14,14 @@
 } 
 
 .logoFCA{
+    height: $altura-FCA;
     margin-top: 0.75rem;
-    height: 3rem;
 }
 
 .textoFCA{
-    margin-top: 0.25rem;
     font-family: $fuente-footer;
     font-weight: bold;
     font-size: $altura-texto-footer;
     color: $color-texto-footer;
+    margin-top: 0.25rem;
 }
